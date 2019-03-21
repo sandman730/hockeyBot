@@ -11,5 +11,5 @@ imgurClientSecret = ''
 r = praw.Reddit(client_id=clientId, client_secret=clientSecret, password=password, user_agent='Updating game thread',
                 username=username)
 
-CSB = Chatter_Stats_Bot(r, imgurClientID)
+CSB = Chatter_Stats_Bot(r, imgurClientID, subreddit='hockey')
 CSB.run()
